@@ -2,7 +2,7 @@ var Singleton = (function() {
 	var instance
 
 	function createInstance() {
-		var object = new Object('Istance')
+		var object = new Object('Instance')
 		return object
 	}
 
@@ -16,11 +16,7 @@ var Singleton = (function() {
 	}
 })()
 
-function run() {
-	var instance1 = Singleton.getInstance()
-	var instance2 = Singleton.getInstance()
+var instance1 = Singleton.getInstance()
+var instance2 = Singleton.getInstance()
 
-	console.log('Same instance?', instance1 === instance2)
-}
-
-run()
+console.log('Same instance?', instance1 === instance2)
